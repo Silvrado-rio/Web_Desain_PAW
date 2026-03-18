@@ -124,7 +124,8 @@ input::placeholder {
 
 .btn-google, .btn-rg {
     width: 200px;
-    padding: 10px;
+    height: 45px;
+    padding: 0;
     border-radius: 25px;
     border: none;
     display: flex;
@@ -141,15 +142,16 @@ input::placeholder {
 }
 
 .google-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
     object-fit: contain;
 }
 
-.google-text {
-    color: #4285F4;
-    letter-spacing: 1px;
+.google-text-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
 }
 
 .btn-rg {
