@@ -1,0 +1,39 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.bg-login {
+    background-image: url('wallpaper/1.png');
+}
+
+.bg-register {
+    background-image: url('wallpaper/3.png');
+}
+
+.bg-dashboard {
+    background-image: url('wallpaper/2.jpg');
+}
+
+.auth-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.custom-navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
