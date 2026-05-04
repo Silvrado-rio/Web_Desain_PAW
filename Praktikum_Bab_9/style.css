@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --bg-dark: #0f1923;
+    --card-bg: #1f2731;
+    --accent-red: #ff4655;
+    --accent-hover: #ff5865;
+    --text-main: #ece8e1;
+    --text-muted: #8b97a3;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    border-top: 4px solid var(--accent-red);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: var(--text-main);
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    border-color: var(--accent-red);
+}
+
+#addButton {
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#addButton:hover {
+    background-color: var(--accent-hover);
+}
+
+#addButton:active {
+    transform: scale(0.95);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--accent-red);
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--text-muted);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 70, 85, 0.1);
+    color: var(--accent-red);
+    border-color: var(--accent-red);
+}
