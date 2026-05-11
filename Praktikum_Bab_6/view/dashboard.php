@@ -18,7 +18,7 @@ if (isset($_SESSION['access_error'])) {
 <body>
 
 <video autoplay muted loop class="video-bg" id="bgVideo">
-    <source src="../assets/Rio - Layalaya.mp4" type="video/mp4">
+    <source src="../assets/Rio.mp4" type="video/mp4">
 </video>
 <div class="overlay"></div>
 
